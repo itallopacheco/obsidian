@@ -12,11 +12,27 @@
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "templates/scripts",
-  "enable_folder_templates": false,
+  "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "templates",
-      "template": "templates/ADR.md"
+      "folder": "ideas",
+      "template": "templates/Idea.md"
+    },
+    {
+      "folder": "journal",
+      "template": "templates/Worklog.md"
+    },
+    {
+      "folder": "learning",
+      "template": "templates/Learning.md"
+    },
+    {
+      "folder": "snippets",
+      "template": "templates/Snippets.md"
+    },
+    {
+      "folder": "",
+      "template": ""
     }
   ],
   "enable_file_templates": false,

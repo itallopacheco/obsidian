@@ -1,0 +1,5 @@
+# 🛠️ Trabalhado hoje
+
+# 📚 Aprendido
+
+# 🚧 Impedimentos
