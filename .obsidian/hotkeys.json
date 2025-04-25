@@ -1,0 +1,12 @@
+{
+  "file-explorer:new-file-in-new-pane": [],
+  "templater-obsidian:create-templates/New Project.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ]
+}

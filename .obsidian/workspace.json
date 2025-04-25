@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "41cfbeede9a72b10",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f2c2dd692d20064",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16778cfd1f5b56f7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2eb6c63d2f62117b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c9c57540fb3dca43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "568e54c8b509df9e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "651badb2bf855afb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "da1715866154b493",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "920797540992c089",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c39cf4568bba584",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "89318efa904e9b1e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "templates/New Project.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for New Project"
+            }
+          },
+          {
+            "id": "6305c92816497d03",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "templates/New Project.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from New Project"
+            }
+          },
+          {
+            "id": "da83c9d2e8f596b4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2d5a5fbf7666b351",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "templates/New Project.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of New Project"
+            }
+          },
+          {
+            "id": "1e7e970b961f6306",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-kanban:Create new board": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "568e54c8b509df9e",
+  "lastOpenFiles": [
+    "projects/teste/Decisions/Index.md",
+    "projects/teste/Notes.md",
+    "projects/teste/README.md",
+    "projects/teste/Timeline.md",
+    "projects/Code-Plataform/Timeline.md",
+    "projects/Code-Plataform/README.md",
+    "projects/Code-Plataform/Notes.md",
+    "projects/Code-Plataform/Decisions.md",
+    "Untitled.md",
+    "Projects/kkkkk/README.md",
+    "Projects/kkkkk/Decisions/Index.md",
+    "Projects/kkkkk/Notes.md",
+    "Projects/kkkkk/Timeline.md",
+    "Projects/kkkkk/Decisions",
+    "Projects/kkkkk/Logs",
+    "Projects/kkkkk/Tasks",
+    "Projects/kkkkk/Docs",
+    "Projects/kkkkk",
+    "Projects",
+    "projects/teste/Decisions",
+    "projects/teste/Logs",
+    "projects/teste/Tasks",
+    "projects/teste/Docs",
+    "projects/askopdas/Decisions/Index.md",
+    "projects/askopdas/Notes.md",
+    "projects/askopdas/Timeline.md",
+    "projects/askopdas/README.md",
+    "Untitled 1.md",
+    "projects/fpdaskodoasp/Decisions/Index.md",
+    "projects/fpdaskodoasp/Notes.md",
+    "projects/fpdaskodoasp/Timeline.md",
+    "projects/fpdaskodoasp/README.md",
+    "projects/doaps/README.md",
+    "projects/doaps/Decisions/Index.md",
+    "projects/doaps/Notes.md",
+    "projects/doaps/Timeline.md"
+  ]
+}
