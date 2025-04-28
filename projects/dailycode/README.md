@@ -23,65 +23,27 @@ Para esse projeto, utilizaremos o [[piston]] como um serviço de execução de c
 
 ```mermaid
 flowchart TD
+  C[Client] -->|REST| API[Quarkus-API]
+  subgraph Ingress Service
+    API -->|write| DB[(Postgres)]
+    API -->|"enqueue(submission_id)"| Q[(RabbitMQ/Kafka)]
+  end
 
-C[Client]
+  subgraph Evaluation Service
+    Q -->|"dequeue()"| W[Quarkus-Worker]
+    W -->|POST /run| P[Piston Service]
+    P -->|result| W
+    W -->|update| DB
+  end
 
-API[API Service]
-
-Q[Job Queue]
-
-W[Worker Service]
-
-P[Piston Service]
-
-DB[(Store de Submissões e Questões)]
-
-  
-
-C -->|POST /submission/:id<br/>GET /submission/:id<br/>GET /question/:id<br/>GET /runtimes| API
-
-API -->|"enqueue(submission_id)"| Q
-
-API -->|read/write| DB
-
-Q -->|"dequeue()"| W
-
-W -->|execute código| P
-
-P -->|resultado| W
-
-W -->|atualiza status/resultados| DB
-```
-
-
-
-```mermaid
-classDiagram
-  class SubmissionAggregate {
-    +SubmissionId id
-    +QuestionId questionId
-    +UserId userId
-    +Code source
-    +Language language
-    +SubmissionStatus status
-    +ExecutionResult result
-    +submit()
-    +markAsPending()
-    +markAsCompleted(ExecutionResult)
-  }
-  class ExecutionResult {
-    +bool accepted
-    +List<TestCaseResult> caseResults
-    +Duration totalTime
-    +MemoryUsage peakMemory
-  }
-  class TestCaseResult {
-    +TestCaseId id
-    +bool passed
-    +Duration time
-    +String output
-  }
-  SubmissionAggregate "1" o-- "1" ExecutionResult
-  ExecutionResult "1" o-- "*" TestCaseResult
+  subgraph Executor Service
+    P -->|containerized| Pods[Piston Pods 🐳]
+  end
 
 ```
+
+
+
+É importante implementar um monitoramento forte nos serviços para fazer um levantamento de quanto recurso computacional é necessário para atender x numero de requisições, isso precisará ser estudado futuramente e testes de estresse podem servir para entender a capacidade "base" do projeto.
+
+
